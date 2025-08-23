@@ -21,7 +21,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-          <img src="/src/assets/images/banner.jpg" alt="banner" className="w-full h-64 md:h-80 object-cover" />
+          <img src="/src/assets/banner.jpg" alt="banner" className="w-full h-64 md:h-80 object-cover" />
         </div>
       </div>
 

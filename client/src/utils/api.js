@@ -1,23 +1,23 @@
-// src/utils/api.js
 import axios from "axios";
 
+// Use environment variable for base URL
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
   headers: {
     "Content-Type": "application/json",
   },
 });
 
-//  Request interceptor: attach token if available
+// Request interceptor: attach token if available
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem("bc_token"); // FIXED key
+  const token = localStorage.getItem("bc_token"); // token key
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 });
 
-//  Response interceptor
+// Response interceptor
 api.interceptors.response.use(
   (res) => res,
   (err) => {
