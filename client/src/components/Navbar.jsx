@@ -24,7 +24,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="py-4 shadow-md bg-gradient-to-r from-pink-300 to-pink-500 sticky top-0 z-50">
+    <header className="py-4 shadow-md bg-gradient-to-r from-pink-400 to-pink-500 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-5 flex items-center justify-between text-white">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">

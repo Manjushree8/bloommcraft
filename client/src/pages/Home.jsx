@@ -41,9 +41,9 @@ export default function Home() {
       </div>
 
       {/* Call to Action */}
-      <div className="text-center py-12 bg-gradient-to-r from-pink-100 to-pink-100 rounded-2xl shadow-inner">
+      <div className="text-center py-12 bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl shadow-inner">
         <h2 className="text-3xl font-bold mb-4 text-pink-500">Start Creating Your Dream Garland Today!</h2>
-        <Link to="/products" className="bg-pink-800 hover:bg-pink-500 transition-colors text-white px-6 py-3 rounded-2xl font-semibold shadow-lg">
+        <Link to="/products" className="bg-purple-600 hover:bg-purple-900 transition-colors text-white px-6 py-3 rounded-2xl font-semibold shadow-lg">
           Browse Products
         </Link>
       </div>
