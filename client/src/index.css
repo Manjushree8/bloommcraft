@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #C197A0;
+  --cream: #F8F3E6;
+  --textdark: #4B2E2B;
+}
+
+body {
+  @apply bg-cream text-textdark font-sans;
+}
+
+/* small helper */
+.card {
+  @apply rounded-2xl p-4 bg-white/80 border border-[#efe6e6] shadow-sm;
+}
