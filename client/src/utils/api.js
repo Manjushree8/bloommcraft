@@ -1,5 +1,8 @@
 import axios from "axios";
 
+// TEMP: check which API URL is being used
+console.log("API URL in use:", import.meta.env.VITE_API_URL || "http://localhost:5000/api");
+
 // Use environment variable for base URL
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
