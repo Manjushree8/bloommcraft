@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaGift, FaLeaf, FaClock, FaTruck } from "react-icons/fa";
+import banner from "../assets/banner.jpg"; // <-- import image
 
 export default function Home() {
   const features = [
@@ -21,7 +22,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-          <img src="/src/assets/banner.jpg" alt="banner" className="w-full h-64 md:h-80 object-cover" />
+          <img src={banner} alt="banner" className="w-full h-64 md:h-80 object-cover" />
         </div>
       </div>
 
