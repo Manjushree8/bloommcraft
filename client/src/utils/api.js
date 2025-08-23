@@ -8,7 +8,7 @@ const api = axios.create({
   },
 });
 
-// ✅ Request interceptor: attach token if available
+//  Request interceptor: attach token if available
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("bc_token"); // FIXED key
   if (token) {
@@ -17,7 +17,7 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// ✅ Response interceptor
+//  Response interceptor
 api.interceptors.response.use(
   (res) => res,
   (err) => {
