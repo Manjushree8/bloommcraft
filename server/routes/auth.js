@@ -15,9 +15,7 @@ const otpStore = {};
 
 const signToken = (id) => jwt.sign({ id }, JWT_SECRET, { expiresIn: "7d" });
 
-/**
- * REGISTER (with role = user by default)
- */
+// REGISTER
 router.post("/register", async (req, res) => {
   try {
     let { name, email, password } = req.body;
@@ -34,23 +32,29 @@ router.post("/register", async (req, res) => {
       name,
       email,
       password: hashedPassword,
-      role: "user", 
+      role: "user",
     });
 
-    // Optional: send welcome email
-    sendWelcomeEmail(email, name).catch(() => {});
+    // Send Welcome Email (await + log error)
+    try {
+      await sendWelcomeEmail(email, name);
+      console.log(`✅ Welcome email sent to ${email}`);
+    } catch (mailErr) {
+      console.error("❌ Failed to send welcome email:", mailErr);
+    }
 
     const token = signToken(user._id);
     return res.status(201).json({
       message: "Registration successful",
       token,
-      role: user.role, 
+      role: user.role,
     });
   } catch (err) {
     console.error("Register error:", err);
     return res.status(500).json({ message: "Server error" });
   }
 });
+
 
 /**
  * LOGIN - Step 1: Send OTP
