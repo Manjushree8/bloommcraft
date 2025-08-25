@@ -15,10 +15,12 @@ It delivers a clean and engaging UI for users while simplifying backend handling
 ##  Features
 
 - User-friendly interface built with **React**  
-- Email sending via **Nodemailer** 
+- Email notifications via **Nodemailer**  
 - Secure backend using **Node.js + Express**  
 - REST API for frontend-backend communication  
-- Responsive UI with modern styling  
+- Responsive UI with **Tailwind CSS** styling  
+- JWT authentication for secure user login  
+- Admin panel for managing orders and products  
 
 ---
 
@@ -26,124 +28,30 @@ It delivers a clean and engaging UI for users while simplifying backend handling
 
 **Frontend**
 - React  
-- CSS / Tailwind CSS  
+- Vite  
+- Tailwind CSS  
 
 **Backend**
 - Node.js  
 - Express.js  
+- MongoDB (Mongoose ODM)  
 - Nodemailer  
+- JWT Authentication  
 
 ---
 
-## Folder Structure
+## Live Demo
 
-```bash
-bloommcraft/
-├── client/                 # Frontend (React)
-│   ├── public/             # Static assets
-│   ├── src/                # React source code
-│   │   ├── components/     # Reusable UI components
-│   │   ├── pages/          # Page-level components
-│   │   ├── utils/          # Helper functions & API calls
-│   │   ├── App.js          # Root component
-│   │   └── index.js        # Entry point
-│   └── package.json
+Frontend (Vercel): https://bloommcraft.vercel.app
 
-├── server/                 # Backend (Node.js + Express)
-│   ├── models/             # Database models
-│   ├── routes/             # Express routes (auth, products, orders, etc.)
-│   ├── middleware/         # Middleware (auth, error handling)
-│   ├── utils/              # Nodemailer, helpers
-│   ├── server.js           # Backend entry point
-│   └── package.json
+Backend (Render): https://bloommcraft-server.onrender.com
 
-├── .gitignore              
-└── README.md             # Project documentation
+## Installation & Setup
 
-
-##  Live Demo
-
-- **Frontend (Vercel):** [https://bloommcraft.vercel.app](https://bloommcraft.vercel.app)  
-- **Backend (Render):** [https://bloommcraft-server.onrender.com](https://bloommcraft-server.onrender.com)
-
----
-
-## 📸 Screenshots
-
-### User Flow
-- **Home Page**  
-  ![Home Page](/client/public/screenshots/homepage.png)
-
-- **Register Page**  
-  ![Register Page](/client/public/screenshots/RegisterPage.png)
-
-- **Login with OTP**  
-  ![Login OTP](/client/public/screenshots/LoginOTP.jpg)
-
-- **OTP Verification**  
-  ![OTP Verification](/client/public/screenshots/OtpVerification.png)
-
-- **Not Logged In Alert**  
-  ![Not Login Alert](/client/public/screenshots/NotLoginAlert.png)
-
-- **Welcome Email**  
-  ![Welcome Mail](/client/public/screenshots/WelcomeMail.jpg)
-
----
-
-### Shopping Flow
-- **Product Listing**  
-  ![Products Page](/client/public/screenshots/ProductPage.png)
-
-- **Product Details & Customization**  
-  ![Product Details](/client/public/screenshots/ProductDetails.png)
-
-- **Search Bar**  
-  ![Search Bar](/client/public/screenshots/SearchBar.png)
-
-- **Added to Cart**  
-  ![Added to Cart](/client/public/screenshots/AddedToCart.png)
-
-- **Cart Page**  
-  ![Cart](/client/public/screenshots/CartPage.png)
-
-- **Checkout Page**  
-  ![Checkout](/client/public/screenshots/CheckoutPage.png)
-
-- **Order Placed**  
-  ![Order Placed](/client/public/screenshots/OrderPlaced.png)
-
----
-
-### Profile
-- **My Profile**  
-  ![My Profile](/client/public/screenshots/MyProfile.png)
-
-- **Profile Edit**  
-  ![Profile Edit](/client/public/screenshots/ProfileEdit.png)
-
----
-
-### Admin Flow
-- **Admin Dashboard**  
-  ![Admin Dashboard](/client/public/screenshots/AdminDashboard.png)
-
-- **Admin Navbar**  
-  ![Admin Navbar](/client/public/screenshots/AdminNavbar.png)
-
-- **Hamburger Menu**  
-  ![Hamburger Menu](/client/public/screenshots/HamburgerMenu.png)
-
-- **Manage Orders**  
-  ![Manage Orders](/client/public/screenshots/ManageOrders.png)
-
-##  Installation & Setup
-
-```bash
 # 1. Clone the repository
 git clone https://github.com/Manjushree8/bloommcraft.git
 
-# 2. Navigate into the project
+# 2. Navigate into the project root
 cd bloommcraft
 
 # 3. Install dependencies for backend
@@ -159,6 +67,8 @@ npm install
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_email_password
 
 # 6. Run the backend server
 cd server
@@ -170,3 +80,84 @@ npm run dev
 
 # 8. Open the app in your browser
 http://localhost:5173
+
+## Deployment
+
+The frontend is deployed using Vercel
+
+The backend is deployed using Render
+
+You can update deployments automatically by pushing changes to the main branch.
+
+# 🌸 Bloommcraft
+
+Bloommcraft is a modern full-stack web application designed to manage and showcase floral collections while providing smooth customer interactions.  
+It features a **React frontend** and a **Node.js + Express backend**, with **Nodemailer** integration for email communications.
+
+---
+
+## 📖 Project Overview
+
+Bloommcraft streamlines the process of browsing, managing, and ordering flowers or floral arrangements.  
+It delivers a clean and engaging UI for users while simplifying backend handling for store owners/admins.
+
+---
+
+## ✨ Features
+
+- User-friendly interface built with **React**  
+- Email notifications via **Nodemailer**  
+- Secure backend using **Node.js + Express**  
+- REST API for frontend-backend communication  
+- Responsive UI with **Tailwind CSS** styling  
+- JWT authentication for secure user login  
+- Admin panel for managing orders and products  
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React  
+- Vite  
+- Tailwind CSS  
+
+**Backend**
+- Node.js  
+- Express.js  
+- MongoDB (Mongoose ODM)  
+- Nodemailer  
+- JWT Authentication  
+
+---
+
+## 📂 Folder Structure
+
+```bash
+bloommcraft/
+├── client/                 # Frontend (React)
+│   ├── public/             # Static assets
+│   ├── src/                # React source code
+│   │   ├── components/     # Reusable UI components
+│   │   ├── pages/          # Page-level components
+│   │   ├── utils/          # Helper functions & API calls
+│   │   ├── App.js          # Root component
+│   │   └── main.jsx        # Entry point
+│   └── package.json
+
+├── server/                 # Backend (Node.js + Express)
+│   ├── models/             # Database models
+│   ├── routes/             # Express routes (auth, products, orders, etc.)
+│   ├── middleware/         # Middleware (auth, error handling)
+│   ├── utils/              # Nodemailer, helpers
+│   ├── server.js           # Backend entry point
+│   └── package.json
+
+├── .gitignore              
+└── README.md               # Project documentation
+
+
+Author
+
+Manjushree
+https://github.com/Manjushree8
