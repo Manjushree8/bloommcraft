@@ -133,7 +133,7 @@ It delivers a clean and engaging UI for users while simplifying backend handling
 
 ## 📂 Folder Structure
 
-```bash
+
 bloommcraft/
 ├── client/                 # Frontend (React)
 │   ├── public/             # Static assets
@@ -157,7 +157,7 @@ bloommcraft/
 └── README.md               # Project documentation
 
 
-Author
+## Author
 
 Manjushree
 https://github.com/Manjushree8
