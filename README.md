@@ -1,30 +1,30 @@
-# 🌸 Bloommcraft
+#  Bloommcraft
 
 **Bloommcraft** is a modern **full-stack web application** designed to manage and showcase floral collections while providing smooth customer interactions.  
 It offers a clean and engaging UI for customers and a powerful backend for store owners/admins to handle orders and products efficiently.  
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 Bloommcraft streamlines the process of browsing, managing, and ordering flowers or floral arrangements.  
 The application bridges the gap between customers and floral businesses by combining a **React-based frontend** with a **Node.js + Express backend**, integrated with **MongoDB** for data management and **Nodemailer** for email communications.  
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🌼 **Modern UI** – Built with **React + Tailwind CSS** for a responsive and engaging design  
-- 📧 **Email Notifications** – Integrated with **Nodemailer** for order confirmations & updates  
-- 🔒 **Secure Authentication** – **JWT-based login system** for customers & admins  
-- 🛠 **Admin Dashboard** – Manage products, orders, and users seamlessly  
-- 🔗 **RESTful API** – Ensures smooth communication between frontend & backend  
-- 📱 **Responsive Design** – Optimized for desktop, tablet, and mobile  
-- ⚡ **Fast & Scalable** – Built with **Vite** for the frontend and deployed on scalable hosting  
+-  **Modern UI** – Built with **React + Tailwind CSS** for a responsive and engaging design  
+-  **Email Notifications** – Integrated with **Nodemailer** for order confirmations & updates  
+-  **Secure Authentication** – **JWT-based login system** for customers & admins  
+-  **Admin Dashboard** – Manage products, orders, and users seamlessly  
+-  **RESTful API** – Ensures smooth communication between frontend & backend  
+-  **Responsive Design** – Optimized for desktop, tablet, and mobile  
+-  **Fast & Scalable** – Built with **Vite** for the frontend and deployed on scalable hosting  
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 **Frontend**
 - React  
@@ -44,7 +44,7 @@ The application bridges the gap between customers and floral businesses by combi
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 - **Frontend (Vercel):** [bloommcraft.vercel.app](https://bloommcraft.vercel.app)  
 - **Backend (Render):** [bloommcraft-server.onrender.com](https://bloommcraft-server.onrender.com)  
@@ -113,7 +113,9 @@ bloommcraft/
 ├── .gitignore              
 └── README.md               # Project documentation
 
-# Deployment
+```
+
+## Deployment
 
 Frontend – Hosted on Vercel
 
