@@ -10,7 +10,8 @@ import { fileURLToPath } from "url";
 // Routes
 import testRoute from "./routes/test.js";
 import authRoute from "./routes/auth.js";
-import productRoute from "./routes/product.js";  // <-- use JSON one
+import productRoute from "./routes/productRoute.js";
+ // <-- use JSON one
 
 import orderRoutes from "./routes/orderRoutes.js";   //  use only this one
 //import adminRoute from "./routes/admin.js";
