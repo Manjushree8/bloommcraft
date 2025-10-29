@@ -40,7 +40,7 @@ router.post("/", authMiddleware, async (req, res) => {
       products,
       address,
       deliveryDate,
-      totalPrice, //  now saved properly
+      totalPrice, 
     });
 
     await order.save();

@@ -13,6 +13,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "yoursecret";
 // otpStore[email] = { code: "123456", exp: <timestamp> }
 const otpStore = {};
 
+//Helper Function
 const signToken = (id) => jwt.sign({ id }, JWT_SECRET, { expiresIn: "7d" });
 
 // REGISTER
